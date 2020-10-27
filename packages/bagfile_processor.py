@@ -9,9 +9,7 @@ topic_name = "/" + robot_name + "/camera_node/image/compressed"
 dir_name = os.path.dirname(__file__)
 bag_file_dir = os.path.join(dir_name, 'bagfiles/')
 
-#bagfiles
 bag = rosbag.Bag(bag_file_dir + bag_file_name)
-#processed_bag = rosbag.Bag(bag_file_dir + 'processed_bag.bag', 'w')
 
 print("Processing image message from topic " + topic_name + " ...")
 
